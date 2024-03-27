@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para os elementos do formulário */
+        .form-section {
+            margin-bottom: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para a barra de rolagem */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            background-color: #f4f4f4;
+            overflow-y: auto; /* atributo para adiciona barra de rolagem quando necessário */
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulários Em HTML:5</h2>
+
+        <div class="form-section" id="section1">
+            <h3>Seção 1: Informações Pessoais</h3>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            </form>
+        </div>
+
+        <div class="form-section" id="section2">
+            <h3>Seção 2: Mensagem</h3>
+            <form action="#" method="post">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4"></textarea>
+            </form>
+        </div>
+
+        <div class="form-section" id="section3">
+            <h3>Seção 3: Preferências</h3>
+            <form action="#" method="post">
+                <label for="opcao1">
+                    <input type="checkbox" id="opcao1" name="opcao1" value="opcao1">
+                    Opção 1
+                </label>
+                <label for="opcao2">
+                    <input type="checkbox" id="opcao2" name="opcao2" value="opcao2">
+                    Opção 2
+                </label>
+                <label for="opcao3">
+                    <input type="checkbox" id="opcao3" name="opcao3" value="opcao3">
+                    Opção 3
+                </label>
+            </form>
+        </div>
+
+        <!-- Barra de rolagem -->
+        <div class="sidebar">
+            <a href="#section1">Informações Pessoais</a>
+            <a href="#section2">Mensagem</a>
+            <a href="#section3">Preferências</a>
+        </div>
+    </div>
+</body>
+</html>
